@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic&family=Special+Gothic+Expanded+One&display=swap');
+
+body {
+    font-family: 'Special Gothic Expanded One';
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 20px;
+    justify-content: center;
+    margin: 30px auto;
+  }
+  
+  .btn-cor {
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  
+  .btn-cor:active,
+  .ativa {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  
+  .verde { background-color: #0f0; }
+  .vermelho { background-color: #f00; }
+  .amarelo { background-color: #ff0; }
+  .azul { background-color: #00f; }
+  
+  button {
+    font-family: 'Special Gothic Expanded One';
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 500px) {
+    .container {
+      grid-template-columns: repeat(2, 100px);
+      grid-template-rows: repeat(2, 100px);
+      gap: 10px;
+    }
+  }
+  
